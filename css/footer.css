@@ -1,0 +1,135 @@
+/* footer */
+.foot_inner > div:nth-of-type(1){
+border-bottom: 1px solid rgba(255,255,255,0.3);
+padding-bottom: 10px;
+}
+.foot_inner > div:nth-of-type(1):after{
+content: "";
+display: block;
+clear: both;
+}
+
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(1){
+float: left;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(1) > li{
+float: left;
+padding: 0 20px;
+border-right: 1px solid #ccc;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(1) > li:first-of-type{
+padding-left: 0;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(1) > li > a{
+color: #ccc;
+line-height: 1;
+}
+
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2){
+position: relative;
+float: right;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2) > li{
+display: inline-block;
+width: 30px;
+background: url(../images/sns_link_ico.png) no-repeat -30px 0;
+text-indent: -9999px; overflow: hidden;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2) > li:nth-of-type(2){
+background-position: 0 0;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2) > li:nth-of-type(3){
+background-position: -60px 0;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2) > li:nth-of-type(4){
+background-position: -90px 0;
+}
+
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2) > li:last-of-type{
+margin-right: 100px;
+}
+
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2) > li:last-of-type:before{
+content: "";
+position: absolute;
+left: 140px;
+top: -5px;
+width: 44px;
+height: 33px;
+background: url(../images/footer_mark2.png) no-repeat 0 0;
+}
+.foot_inner > div:nth-of-type(1) > ul:nth-of-type(2) > li:last-of-type:after{
+content: "";
+position: absolute;
+left: 190px;
+top: -5px;
+width: 32px;
+height: 32px;
+background: url(../images/footer_mark1.png) no-repeat 0 0;  
+}
+
+.foot_inner > div:nth-of-type(2){
+margin-top: 20px;
+}
+
+.foot_inner > div:nth-of-type(2) > ul > li{
+float: left;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+.foot_inner > div:nth-of-type(2) > ul > li > a{
+color: #ccc;
+}
+.foot_inner > div:nth-of-type(2) > ul > li:nth-of-type(3) > a{
+color: #3ba4fa;
+}
+
+.foot_inner > div:nth-of-type(2) > p{
+float: right;
+color: #ccc;
+}
+
+.foot_inner > div:nth-of-type(2) > address{
+clear: both;
+color: #ccc;
+line-height: 1.8;
+}
+.foot_inner > div:nth-of-type(2) > address > span{
+padding: 0 10px;
+border-right: 1px solid #ccc;
+}
+.foot_inner > div:nth-of-type(2) > address > span:nth-of-type(1){
+padding: 0 10px 0 0;
+}
+.foot_inner > div:nth-of-type(2) > address > span:last-of-type{
+padding: 0;
+border: none;
+}
+
+/* top버튼: 스크롤이 아래로 내려오며 */
+a.btn_top{
+display: none;
+z-index: 100;
+position: fixed;
+bottom: 30px;
+right: 80px;
+width: 60px;
+height: 60px;
+border: 1px solid #333;
+background: #fff url(../images/top_btn_ico.png) no-repeat 50% 20%;
+font-size: 13px;
+color: #333;
+text-align: center;
+line-height: 80px;
+cursor: pointer;
+}
+a.btn_top.on{
+display: block;
+}
+
+a.btn_top.ab{
+position: absolute;
+bottom: auto;  /* 기존에 적용했던 값을 해제 */
+top: -100px;
+right: 80px;
+}

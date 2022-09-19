@@ -1,0 +1,130 @@
+/* sub2.css */
+
+/* container */
+/* spot */
+.spot{
+background: url(../images/careers_visual_img.jpg) no-repeat 50% 0;
+color: #fff;
+}
+.spot_inner > h2{
+font-size: 46px;
+margin-bottom: 15px;
+}
+.spot_inner > p{
+font-size: 16px;
+color: #eee;
+}
+.spot_inner > p.path{
+padding-top: 70px;
+text-align: right;
+font-size: 14px;
+color: #ccc;
+}
+
+/* content */
+#content > p.info_txt{
+font-size: 12px;
+text-align: right;
+margin-bottom: 10px;
+}
+
+/* table */
+#content > table{
+width: 100%;
+box-sizing: border-box;
+border-top: 1px solid gray;
+border-bottom: 1px solid gray;
+margin-bottom: 40px;
+}
+#content > table > thead{
+width: 100%;
+
+border-bottom: 1px solid #ccc;
+line-height: 63px;
+background: #f3f3f3;
+}
+#content > table > thead > tr > th {
+text-align: center;
+font-weight: bold;
+border-right: 1px solid #ccc;
+}
+#content > table > thead > tr > th:last-of-type{
+border-right: none;
+}
+
+#content > table > tbody{
+width: 100%;
+border-bottom: 1px solid #ccc;
+line-height: 60px;
+background: #fff;
+}
+#content > table > tbody td{
+text-align: center;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+#content > table > tbody td:last-of-type{
+border-right: none;
+}
+
+/* document */
+div.document{
+width: 100%;
+background: #f3f3f3;
+padding: 25px 20px 20px;
+font-size: 15px;
+box-sizing: border-box;
+margin-bottom: 60px;
+}
+div.document:after{
+content: "";
+display: block;
+clear: both;
+}
+div.document > ul > li:nth-of-type(2){
+color: #2b6ea5;
+margin-bottom: 35px;
+}
+
+div.document > p{
+float: left;
+line-height: 45px;
+}
+div.document > div.download{
+float: right;
+width: 200px;
+background: #343434 url(../images/btn_arrow_ico_w.png) no-repeat 90% 50%;
+}
+div.document > div.download > a{
+display: block;
+line-height: 45px;
+text-align: center;
+color: #fff;
+
+}
+
+/* faq */
+#content > .faq{
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding: 20px 30px;
+box-sizing: border-box; /* 중요! 가로가 100%일때 패딩이 있으면 꼭 border-box */
+border: 1px solid #ccc;
+margin-bottom: 60px;
+}
+#content > .faq > p{
+font-size: 16px;
+line-height: 45px;
+}
+#content > .faq > a{
+display: block;
+width: 160px;
+height: 45px;
+background: #043285 url(../images/btn_arrow_ico_w.png) no-repeat 90% 50%;
+color: #fff;
+font-size: 16px;
+text-align: center;
+line-height: 45px;
+}
+
